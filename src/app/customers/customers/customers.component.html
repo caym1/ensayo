@@ -1,0 +1,12 @@
+<pre>
+  {{list|json}}
+</pre>
+<pre>
+  {{serviceOrder.list|json}}
+</pre>
+
+<ul *ngFor="let customer of list">
+  <li>
+    <app-form-customer [customer]="customer" (propagar)="guardarCustomer($event)"></app-form-customer>
+  </li>
+</ul>

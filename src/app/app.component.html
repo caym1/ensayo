@@ -1,0 +1,41 @@
+<nav>
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <a [routerLink]="'customers'">Customers</a>
+        </li>
+        <li>
+          <a [routerLink]="'customers/form'">Form customers</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li>
+          <a [routerLink]="'orders'">Orders</a>
+        </li>
+        <li>
+          <a [routerLink]="'orders/form'">Form orders</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li>
+          <a [routerLink]="'forms'">Forms</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li>
+          <a [routerLink]="'list'">Listas</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
